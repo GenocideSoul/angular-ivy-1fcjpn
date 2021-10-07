@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Show } from '//model/show';
+import { Show } from '../../model/show';
 
 @Component({
   selector: 'app-show-list',
@@ -11,3 +11,4 @@ export class ShowListComponent implements OnInit {
 
   ngOnInit() {}
 }
+shows: Show[ ] = [ ];
