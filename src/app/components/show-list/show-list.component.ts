@@ -7,8 +7,11 @@ import { Show } from '../../model/show';
   styleUrls: ['./show-list.component.css'],
 })
 export class ShowListComponent implements OnInit {
-  constructor() {}
+  shows: Show[] = [];
+  constructor() {
+    this.shows.push(new Show(1, 'Paw Patrol'));
+    this.shows.push(new Show(2, 'Termiantor'));
+  }
 
   ngOnInit() {}
 }
-shows: Show[ ] = [ ];
